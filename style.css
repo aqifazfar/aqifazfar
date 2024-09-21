@@ -239,6 +239,7 @@ hr {
 
 #b_container {
   position: relative;
+  width: 100%;
   top: 25vw;
 }
 
@@ -276,7 +277,8 @@ hr {
   background-color: white;
   border-radius: 20px;
   margin-left: 10px;
-  height: 200px;
+  height: 20vw;
+  width: 20vw;
   transition: 0.3s all ease;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
 }
@@ -286,10 +288,6 @@ hr {
   background-color: rgb(207, 207, 207);
 }
 
-.projectcardScaleTx {
-  transform: scale(1.2);
-  transform: translate(100px);
-}
 .projectname {
   text-align: center;
   font-family: Arial;
@@ -306,6 +304,7 @@ hr {
   position: relative;
   position: relative;
   top: 35vw;
+  width: 100%;
 }
 
 #contacts {
@@ -355,6 +354,6 @@ hr {
 }
 
 .bi {
-  width: 30px;
-  height: 30px;
+  width: 3vw;
+  height: 3vw;
 }
