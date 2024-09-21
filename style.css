@@ -151,7 +151,7 @@ header {
   padding: 0px 0px 0px 0px;
   position: relative;
   bottom: 3vw;
-  left: 0vw;
+  right: 2vw;
 
   opacity: 0;
   animation-name: fade_in;
@@ -292,6 +292,7 @@ hr {
   text-align: center;
   font-family: Arial;
   font-weight: bold;
+  font-size: 1.5vw;
   opacity: 0;
   animation-name: fade_in;
   animation-duration: 3s;
@@ -354,6 +355,6 @@ hr {
 }
 
 .bi {
-  width: 3vw;
-  height: 3vw;
+  width: 5vw;
+  height: 5vw;
 }
