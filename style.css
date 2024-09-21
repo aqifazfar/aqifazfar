@@ -1,0 +1,360 @@
+@keyframes body_animation {
+  from {
+    background-color: rgb(58, 58, 58);
+  }
+  to {
+    background-color: whitesmoke;
+  }
+}
+
+@keyframes image_animation {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+  to {
+    opacity: 25;
+    transform: translate(0px);
+  }
+}
+
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide_in_left {
+  from {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes slide_in_right {
+  from {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes slide_in_up {
+  from {
+    opacity: 0;
+    transform: translate(0px, 100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes hr {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 35%;
+  }
+}
+
+body {
+  animation-name: body_animation;
+  animation-duration: 5s;
+  background-color: whitesmoke;
+}
+
+header {
+  width: 50%;
+  display: block;
+  position: relative;
+  right: auto;
+  left: auto;
+  top: 5vw;
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  border-radius: 100px;
+  box-shadow: rgb(98, 194, 225) 0px 3px 40px;
+  opacity: 0;
+  animation-name: fade_in;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+#image {
+  width: 100%;
+  display: block;
+  width: 20%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  left: 5vw;
+  top: 4vw;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.25) 0px 3px 7px -3px;
+  animation-name: image_animation;
+  opacity: 0;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+#name {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 1.5vw;
+  color: black;
+  position: relative;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  bottom: 12vw;
+  left: 18vw;
+  opacity: 0;
+  animation-name: fade_in;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+#essay {
+  width: 50%;
+  display: inline-block;
+  tab-size: 4;
+  font-family: Arial;
+  font-size: 1vw;
+  color: black;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  bottom: 3vw;
+  left: 0vw;
+
+  opacity: 0;
+  animation-name: fade_in;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+hr {
+  background: linear-gradient(
+    to right,
+    transparent,
+    #009dff,
+    #0da2ff,
+    #26abff,
+    #59bfff,
+    #8cd3ff,
+    #bfe6ff
+  );
+
+  height: 5px;
+  rotate: 90deg;
+  border-radius: 50px;
+
+  position: relative;
+  right: auto;
+  left: auto;
+  top: 25vw;
+  padding: 0px auto;
+  width: 35%;
+
+  animation-name: hr;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+}
+
+#a_container {
+  display: grid;
+  position: relative;
+  column-gap: 10vw;
+  align-items: start;
+
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  height: auto;
+  width: 100%;
+
+  top: 10vw;
+  /* left: 3vw; */
+}
+
+#aca {
+  grid-row: 1;
+  grid-column: 1;
+  opacity: 0;
+  animation: slide_in_left 3s 7s ease-in-out forwards;
+  width: 100%;
+  position: relative;
+  left: 5vw;
+}
+
+#aci {
+  grid-row: 1;
+  grid-column: 2;
+  opacity: 0;
+  animation: slide_in_right 3s 7s ease-in-out forwards;
+
+  width: 100%;
+}
+.title {
+  font-size: 2vw;
+  font-family: Arial;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.list {
+  font-family: Arial;
+  font-size: 1.5vw;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 10px 10px 0px;
+}
+
+#b_container {
+  position: relative;
+  top: 25vw;
+}
+
+#projects {
+  display: inline-block;
+
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+  opacity: 0;
+  animation-name: fade_in;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#c_container {
+  display: flex;
+  margin-left: 20%;
+  position: relative;
+  right: 10%;
+  top: 2vw;
+  opacity: 0;
+  animation-name: slide_in_left;
+  animation-duration: 2s;
+  animation-delay: 9s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.projectcard {
+  flex: 1;
+
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  height: 200px;
+  transition: 0.3s all ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.projectcard:hover {
+  flex: 2;
+  background-color: rgb(207, 207, 207);
+}
+
+.projectcardScaleTx {
+  transform: scale(1.2);
+  transform: translate(100px);
+}
+.projectname {
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: fade_in;
+  animation-duration: 3s;
+  animation-delay: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#footer {
+  position: relative;
+  position: relative;
+  top: 35vw;
+}
+
+#contacts {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 2vw;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+
+  opacity: 0;
+  z-index: -1;
+  animation-name: fade_in;
+  animation-duration: 2s;
+  animation-delay: 11s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: whitesmoke;
+
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  top: 2vw;
+
+  animation-name: body_animation;
+  animation-duration: 5s;
+}
+
+.contactscard {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: Arial;
+  font-weight: bold;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.25) 0px 3px 7px -3px;
+}
+
+.bi {
+  width: 30px;
+  height: 30px;
+}
