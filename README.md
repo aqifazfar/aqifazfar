@@ -1,5 +1,5 @@
 # 💫 About Me:
-Fulminare Group<br>Chief Executive Officer (CEO)<br>BUMANTARA-SDK, Bayu<br> 
+ANTARA, ANASIR, KAWALAN, Bayu<br> 
 
 
 # 💻 Tech Stack:
